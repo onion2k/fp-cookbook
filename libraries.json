@@ -1,8 +1,19 @@
 {
-    "libraries": [
-        {
-            "name": "Branch 1",
-            "address": "Station Road"
-        }
-    ] 
+  "libraries": [
+    {
+      "name": "Branch 1",
+      "address": "Station Road",
+      "bookcount": 3000
+    },
+    {
+      "name": "Branch 2",
+      "address": "High Street",
+      "bookcount": 2000
+    },
+    {
+      "name": "Head Office",
+      "address": "Western Approach",
+      "bookcount": 0
+    }
+  ]
 }
