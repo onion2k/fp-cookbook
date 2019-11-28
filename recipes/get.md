@@ -14,17 +14,25 @@ const name = get("name", libraries[0]);
 
 ```js
 /**
- * get returns a value based on a path
+ * get returns a value based on a path with array syntax
  */
-const name = get("[0].name", libraries);
-// name: Branch 1
+const nameFromArray = get("[0].name", libraries);
+// nameFromArray: Branch 1
+```
+
+```js
+/**
+ * get returns a value based on a path with object syntax
+ */
+const nameFromArrayAsObject = get("0.name", libraries);
+console.log(nameFromArrayAsObject);
 ```
 
 ```js
 /**
  * getOr can return a value if the fetch is falsy
  */
-const telephone = getOr("No Telephone", "telephone", library);
+const telephone = getOr("No Telephone", "telephone", libraries[0]);
 // telephone: No Telephone
 ```
 

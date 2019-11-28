@@ -12,15 +12,21 @@ const name = get("name", libraries[0]);
 console.log(name);
 
 /**
- * get returns a value based on a path
+ * get returns a value based on a path with array syntax
  */
-const name2 = get("[0].name", libraries);
-console.log(name2);
+const nameFromArray = get("[0].name", libraries);
+console.log(nameFromArray);
+
+/**
+ * get returns a value based on a path with object syntax
+ */
+const nameFromArrayAsObject = get("0.name", libraries);
+console.log(nameFromArrayAsObject);
 
 /**
  * getOr can return a value if the fetch is falsy
  */
-const telephone = getOr("No Telephone", "[0].telephone", libraries);
+const telephone = getOr("No Telephone", "telephone", libraries[0]);
 console.log(telephone);
 
 /**
@@ -32,5 +38,5 @@ console.log(address(libraries));
 /**
  * get returns a value based on a compund path
  */
-const compondname = get("libraries[1].name", source);
+const compondname = get("libraries.1.name", source);
 console.log(compondname);
