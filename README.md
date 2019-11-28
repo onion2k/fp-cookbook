@@ -6,6 +6,11 @@ Common patterns for using Lodash/FP
 
 FP-Cookbook is a collection of examples of how to use Lodash/FP.
 
+### Lodash FP documentation
+
+Official FP guide: [lodash/fp guide](https://github.com/lodash/lodash/wiki/FP-Guide)
+jfmengels' Lodash FP docs: [lodash-fp-docs](https://gist.github.com/jfmengels/6b973b69c491375117dc)
+
 ## Example
 
 ```js
