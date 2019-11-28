@@ -16,5 +16,12 @@ const library = {
 };
 
 const name = get("name", library);
-// Output: Branch 1
+// name: Branch 1
 ```
+
+## Table of Contents
+
+- [Getting](./recipes/get.md)
+- [Setting and Updating](./recipes/set.md)
+- [Collections and Iterators](./recipes/iteration.md)
+- [Series of operations](./recipes/flow.md)
