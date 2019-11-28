@@ -8,8 +8,14 @@ const { get, getOr } = fp;
 /**
  * get returns a value based on a path
  */
-const name = get("[0].name", libraries);
+const name = get("name", libraries[0]);
 console.log(name);
+
+/**
+ * get returns a value based on a path
+ */
+const name2 = get("[0].name", libraries);
+console.log(name2);
 
 /**
  * getOr can return a value if the fetch is falsy
