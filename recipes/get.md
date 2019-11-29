@@ -1,4 +1,4 @@
-# Getting
+# Get
 
 How to get data from objects and arrays
 
