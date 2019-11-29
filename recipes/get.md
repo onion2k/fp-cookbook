@@ -1,8 +1,8 @@
 # Get
 
-How to get data from objects and arrays
+There are several functions for getting values from objects and arrays.
 
-All examples use libraries.json
+> `libraries` in these examples comes from [libraries.json](../libraries.json).
 
 ### get returns a value based on a path
 
