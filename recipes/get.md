@@ -38,7 +38,6 @@ const telephone = getOr("No Telephone", "telephone", libraries[0]);
 const getAddress = get("address");
 const address = getAddress(library[0]));
 // address: Branch 1
-
 ```
 
 ### get returns a value based on a compund path
