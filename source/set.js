@@ -3,7 +3,14 @@ const fp = require("lodash/fp");
 const source = require("../libraries.json");
 const { libraries } = source;
 
-const { set } = fp;
+const { set, update } = fp;
 
-const name = set("0.manager", "Bob", libraries);
-console.log(name);
+const libraryWithManager = set("0.manager", "Bob", libraries);
+console.log(libraryWithManager);
+
+const libraryWithManagerUpperCase = update(
+  "0.manager",
+  manager => manager.toUpperCase(),
+  libraryWithManager
+);
+console.log(libraryWithManagerUpperCase);

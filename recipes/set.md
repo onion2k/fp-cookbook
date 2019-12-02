@@ -10,5 +10,10 @@ set("0.manager", "Bob", libraries);
 ### update
 
 ```js
-update();
+const libraryWithManagerUpperCase = update(
+  "0.manager",
+  manager => manager.toUpperCase(),
+  libraryWithManager
+);
+// libraryWithManagerUpperCase: 0: { manager: 'BOB' };
 ```
